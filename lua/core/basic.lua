@@ -12,7 +12,6 @@ opt.shiftwidth = 0
 opt.smartindent = t
 opt.autoindent = t
 opt.incsearch = t
-opt.hlsearch = f
 opt.ignorecase = t
 opt.mouse = ""
 opt.termguicolors = t
@@ -53,5 +52,11 @@ api.nvim_set_hl(0, "Visual", {
 api.nvim_set_hl(0, "IncSearch", {
   fg = "#000000",
   bg = "#FF8800",
+  bold = t,
+})
+
+vim.api.nvim_set_hl(0, "Search", {
+  fg = "#000000",
+  bg = "#FFD700",
   bold = t,
 })
