@@ -29,6 +29,7 @@ opt.writebackup = f
 opt.signcolumn = "yes"
 opt.backup = f
 opt.lazyredraw = t
+opt.showmode = f
 
 api.nvim_set_hl(0, "CursorLineNr", {
   fg = "#FFD700",
